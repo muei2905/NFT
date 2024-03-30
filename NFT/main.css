@@ -1,0 +1,46 @@
+.form-control{
+  background-color: #f8f9fa;
+}
+.btn-gray-300 {
+  background-color: #e0e0e0;
+  border-color: #e0e0e0; 
+  color: #000000; 
+}
+.nav-link:hover{
+  border-radius: 5px;
+}
+
+.btn-gray-300:hover, .nav-link:hover {
+  background-color: #c0c0c0;
+  border-color: #c0c0c0; 
+  color: #000000;
+}
+body {
+  width: 100%;
+  height: 50vh;
+  position: relative;
+  overflow: hidden;
+}
+
+body::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(/img/bg.png);
+  background-size: cover;
+  background-position: center;
+  filter: blur(50px); /* Điều chỉnh độ mờ ở đây */
+  z-index: -1;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom, rgba(255,255,255,0.7), rgba(255,255,255,0.7));
+}
